@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strong Password</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="" class="p-sm-5" id="form">
+          <div class="container text-light mt-5">
+              <div class="row g-3">
+                    <div class="">
+                      <div><label class="form-label passwordLabel fw-light" for="pass">Votre mot de passe</label></div>
+                      <div class="position-relative">
+                          <input type="text" name="pass" id="pass" class="form-control form-control text-light" value="a_e\8xt10X" readonly>
+                          <button class="btn btn-light" id="copyBtn" type="button"><img src="ressources/copy.svg" alt="" srcset=""></button>
+                      </div>
+                    </div>
+
+                    <div class="">
+                        <label for="size" class="d-block">Taille du mot de passe : <span id="sizeValue">10</span></label>
+                        <input type="range" name="size" id="size" class="bg-dark text-light w-100 mt-2" min="4" max="30" value="10">
+                    </div>
+
+                    <div class="checkboxes">
+                          <div class="form-check">
+                            <input type="checkbox" name="" id="minuscules" class="form-check-input" checked>
+                            <label for="minuscules" class="form-check-label">Contient des caracteres minuscules</label>
+                          </div>
+                          <div class="form-check mt-2">
+                            <input type="checkbox" name="" id="maj" class="form-check-input" checked>
+                            <label for="maj" class="form-check-label">Contient des caracteres majuscules</label>
+                          </div>
+                          <div class="form-check mt-2">
+                            <input type="checkbox" name="" id="number" class="form-check-input" checked>
+                            <label for="number" class="form-check-label">Contient des nombres</label>
+                          </div>
+                          <div class="form-check mt-2">
+                            <input type="checkbox" name="" id="car" class="form-check-input" checked>
+                            <label for="car" class="form-check-label">Contient des symboles spéciaux</label>
+                          </div>
+                    </div>
+                    
+              </div>
+
+              <div class="text-center mt-5 mb-3">
+                  <button type="button" class="btn btn-outline-light" id="generateBtn">Generate</button>
+              </div>
+
+              
+          </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
