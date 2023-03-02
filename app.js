@@ -88,3 +88,27 @@ createPassword();
  }
 
  console.log(checkedSets());
+
+ const copyBtn = document.querySelector('#copyBtn')
+
+ copyBtn.addEventListener('click', copyBtnClickHandler)
+
+ function copyBtnClickHandler () {
+    let textCopy = passwordContent.value;
+    navigator.clipboard.writeText(textCopy).then(
+        ()=> copied(),
+        (error) => console.error('failed to copy password' , error)
+    )
+ }
+
+ let lock = false;
+ function copied(){
+    if(lock) return;
+    lock = true;
+    console.log("passwords copied");
+    document.querySelector('.copied').classList.add('showCopied');
+    setTimeout(() => {
+        document.querySelector('.copied').classList.remove('showCopied');
+        lock = false;
+    } , 1000)
+ }

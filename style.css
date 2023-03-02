@@ -41,3 +41,36 @@ img {
 #pass:focus{
   box-shadow: none;
 }
+.copied{
+  background-color: aliceblue;
+  color: #111;
+  width: 100px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  right: -23px;
+  display: none;
+}
+.showCopied{
+  display: block;
+  animation: show 1s ease-in;
+  transform: translateY(-40px);
+}
+@keyframes show {
+  0%{
+    transform: translateY(-6px);
+  }
+  20%{
+      transform: translateY(-40px);
+
+  }
+  40%{
+    transform: translateY(-35px);
+  }
+  100%{
+    transform: translateY(-43px);
+
+  }
+}
