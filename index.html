@@ -26,26 +26,26 @@
                     </div>
 
                     <div class="">
-                        <label for="size" class="d-block">Taille du mot de passe : <span id="sizeValue">10</span></label>
-                        <input type="range" name="size" id="size" class="bg-dark text-light w-100 mt-2" min="4" max="30" value="10">
+                        <label for="size" class="d-block fw-light">Taille du mot de passe : <span id="sizeValue">10</span></label>
+                        <input type="range" name="size" id="size" class="bg-dark text-light w-100 mt-2" min="4" max="20" value="10">
                     </div>
 
                     <div class="checkboxes">
                           <div class="form-check">
-                            <input type="checkbox" name="" id="minuscules" class="form-check-input" checked>
-                            <label for="minuscules" class="form-check-label">Contient des caracteres minuscules</label>
+                            <input type="checkbox" name="" id="lowercaseChars" class="form-check-input" checked>
+                            <label for="lowercaseChars" class="form-check-label">Contient des caracteres minuscules</label>
                           </div>
                           <div class="form-check mt-2">
-                            <input type="checkbox" name="" id="maj" class="form-check-input" checked>
-                            <label for="maj" class="form-check-label">Contient des caracteres majuscules</label>
+                            <input type="checkbox" name="" id="uppercaseChars" class="form-check-input" checked>
+                            <label for="uppercaseChars" class="form-check-label">Contient des caracteres majuscules</label>
                           </div>
                           <div class="form-check mt-2">
-                            <input type="checkbox" name="" id="number" class="form-check-input" checked>
-                            <label for="number" class="form-check-label">Contient des nombres</label>
+                            <input type="checkbox" name="" id="numbers" class="form-check-input" checked>
+                            <label for="numbers" class="form-check-label">Contient des nombres</label>
                           </div>
                           <div class="form-check mt-2">
-                            <input type="checkbox" name="" id="car" class="form-check-input" checked>
-                            <label for="car" class="form-check-label">Contient des symboles spéciaux</label>
+                            <input type="checkbox" name="" id="symbols" class="form-check-input" checked>
+                            <label for="symbols" class="form-check-label">Contient des symboles spéciaux</label>
                           </div>
                     </div>
                     
@@ -53,6 +53,7 @@
 
               <div class="text-center mt-5 mb-3">
                   <button type="button" class="btn btn-outline-light" id="generateBtn">Generate</button>
+                  <p class="error-msg mt-2 text-danger"></p>
               </div>
 
               

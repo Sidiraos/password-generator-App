@@ -17,6 +17,7 @@ body {
 }
 .label {
   font-size: clamp(10px, 5vw, 20px);
+  font-family: raleway, "Open Sans";
 }
 img {
   width: 20px;
